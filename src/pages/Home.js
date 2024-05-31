@@ -43,7 +43,7 @@ function Home() {
 
   ]);
 
-  // État pour stocker les données de la galerie de Pokémon
+ 
   const [pokemonData, setPokemonData] = useState([]);
 
   // Récupérer les données de la galerie de Pokémon depuis l'API Pokémon
@@ -51,7 +51,6 @@ function Home() {
     fetch('https://pokeapi.co/api/v2/pokemon?limit=10')
       .then(response => response.json())
       .then(data => {
-        // Créer un tableau d'objets avec le nom et l'image de chaque Pokémon
         const pokemonInfo = data.results.map(pokemon => {
           return {
             name: pokemon.name,
