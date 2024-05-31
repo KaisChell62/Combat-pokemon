@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import PokemonList from './pages/PokemonList';
 import Combat from './pages/Combat';
 import Quiz from './pages/quiz';
+import common from './common'; // Importation du module common
 
 function App() {
   return (
